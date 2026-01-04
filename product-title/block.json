@@ -1,0 +1,195 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "smart-store-pro/product-title",
+  "version": "1.0.0",
+  "title": "Product Title",
+  "category": "smart-store-pro-element",
+  "keywords": ["product", "title", "woocommerce"],
+  "description": "Display the title of a product.",
+  "textdomain": "woo-product-slider-pro",
+  "usesContext": ["query", "queryId", "postId"],
+  "supports": {
+    "html": false,
+    "interactivity": {
+      "clientNavigation": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontWeight": true,
+      "__experimentalTextTransform": true,
+      "__experimentalFontFamily": true
+    },
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false,
+      "gradients": true,
+      "__experimentalSkipSerialization": true
+    },
+    "spacing": {
+      "margin": true,
+      "__experimentalSkipSerialization": true
+    },
+    "__experimentalSelector": ".spssp-block-components-product-title"
+  },
+  "attributes": {
+    "queryId": {
+      "type": "string"
+    },
+    "headingLevel": {
+      "type": "number",
+      "default": 2
+    },
+    "showProductLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "linkTarget": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "number",
+      "default": 0
+    },
+    "align": {
+      "type": "string"
+    },
+
+    "sectionHeadingHTMLTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "layoutOptions": {
+      "type": "object",
+      "default": {
+        "titleLength": "full",
+        "limitCount": 20,
+        "alignment": "left"
+      }
+    },
+    "productTitleTypography": {
+      "type": "object",
+      "default": {
+        "googleFont": {
+          "family": "Default",
+          "variants": ["300", "400", "500", "600", "700", "800"]
+        },
+        "typography": {
+          "family": "",
+          "fontWeight": "",
+          "style": "",
+          "transform": "",
+          "decoration": ""
+        }
+      }
+    },
+    "productTitleFontsize": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": "",
+          "Tablet": "",
+          "Mobile": ""
+        }
+      }
+    },
+    "productTitleGlobalTypo": {
+      "type": "object",
+      "default": {}
+    },
+    "productTitleLineHeight": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": "",
+          "Tablet": "",
+          "Mobile": ""
+        }
+      }
+    },
+
+    "productTitleLetterSpacing": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": "",
+          "Tablet": "",
+          "Mobile": ""
+        }
+      }
+    },
+
+    "productTitleFontSpacing": {
+      "type": "object",
+      "default": {
+        "margin": {
+          "top": "",
+          "bottom": "",
+          "left": "",
+          "right": ""
+        }
+      }
+    },
+    "productTitleWordSpacing": {
+      "type": "object",
+      "default": {
+        "margin": {
+          "top": "",
+          "bottom": "",
+          "left": "",
+          "right": ""
+        }
+      }
+    },
+    "productTitleMargin": {
+      "type": "object",
+      "default": {
+        "margin": {
+          "top": "",
+          "bottom": "",
+          "left": "",
+          "right": ""
+        }
+      }
+    },
+    "productTitlePadding": {
+      "type": "object",
+      "default": {
+        "padding": {
+          "top": "",
+          "bottom": "",
+          "left": "",
+          "right": ""
+        }
+      }
+    },
+    "productTitleUnderline": {
+      "type": "boolean",
+      "default": true
+    },
+    "productTitleState": {
+      "type": "string",
+      "default": "normal"
+    },
+    "productTitleColorType": {
+      "type": "string",
+      "default": "solid"
+    },
+    "productTitleColor": {
+      "type": "object",
+      "default": {
+        "color": "#222222",
+        "hover": "#ff469e"
+      }
+    },
+    "productTitleGradient": {
+      "type": "object",
+      "default": {
+        "normal": "",
+        "hover": ""
+      }
+    }
+  }
+}
