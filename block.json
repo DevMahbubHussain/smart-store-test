@@ -1,0 +1,143 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "smart-store-pro/product-title",
+    "version": "1.0.0",
+    "title": "Product Title",
+    "category": "smart-store-pro-element",
+    "keywords": [
+        "product",
+        "title",
+        "woocommerce"
+    ],
+    "description": "Display the title of a product.",
+    "textdomain": "woo-product-slider-pro",
+    "usesContext": [
+        "query",
+        "queryId",
+        "postId"
+    ],
+    "supports": {
+        "html": false,
+        "interactivity": {
+            "clientNavigation": false
+        }
+    },
+    "attributes": {
+        "headingLevel": {
+            "type": "number",
+            "default": 2
+        },
+        "showProductLink": {
+            "type": "boolean",
+            "default": true
+        },
+        "linkTarget": {
+            "type": "boolean",
+            "default": false
+        },
+        "productId": {
+            "type": "number",
+            "default": 0
+        },
+        "align": {
+            "type": "string"
+        },
+        "queryId": {
+            "type": "string"
+        },
+        "productTitleHtmlTag": {
+            "type": "string",
+            "default": "h2"
+        },
+        "productTitleAlignment": {
+            "type": "string",
+            "default": "left"
+        },
+        "productTitleLengthOptions": {
+            "type": "object",
+            "default": {
+                "titleLength": "full",
+                "limitCount": 20
+            }
+        },
+        "gridStyle": {
+            "type": "object",
+            "properties": {
+                "columns": {
+                    "type": "object"
+                },
+                "horizontalGap": {
+                    "type": "object"
+                },
+                "verticalGap": {
+                    "type": "object"
+                },
+                "contentAlignment": {
+                    "type": "string"
+                },
+                "linkColumnGap": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "linkRowGap": {
+                    "type": "boolean",
+                    "default": false
+                }
+            }
+        },
+        "advancedBg": {
+            "type": "object",
+            "default": {
+                "color": {
+                    "style": "transparent",
+                    "transparent": "",
+                    "solidColor": "#E9F4FFF2",
+                    "gradient": "linear-gradient(135deg,rgba(179,50,95,0.44) 0%,rgba(227,86,43,0.45) 100%)"
+                },
+                "hover": {
+                    "style": "bgColor",
+                    "transparent": "",
+                    "solidColor": "",
+                    "gradient": "linear-gradient(135deg,rgba(179,50,95,0.44) 0%,rgba(227,86,43,0.45) 100%)"
+                }
+            }
+        },
+        "productUnderline":{
+            "type":"boolean",
+            "default":true
+        },
+        "productTitleMargin": {
+            "type": "object",
+            "default": {
+                "device": {
+                    "Desktop": { "top": "10", "right": "", "bottom": "10", "left": "" },
+                    "Tablet":  { "top": "", "right": "", "bottom": "", "left": "" },
+                    "Mobile":  { "top": "", "right": "", "bottom": "", "left": "" }
+                },
+                "unit": {
+                    "Desktop": "px",
+                    "Tablet": "px",
+                    "Mobile": "px"
+                },
+                "allChange": false
+            }
+        },
+        "productTitlePadding": {
+            "type": "object",
+            "default": {
+                "device": {
+                    "Desktop": { "top": "10", "right": "", "bottom": "10", "left": "" },
+                    "Tablet":  { "top": "", "right": "", "bottom": "", "left": "" },
+                    "Mobile":  { "top": "", "right": "", "bottom": "", "left": "" }
+                },
+                "unit": {
+                    "Desktop": "px",
+                    "Tablet": "px",
+                    "Mobile": "px"
+                },
+                "allChange": false
+            }
+        }
+    }
+}
